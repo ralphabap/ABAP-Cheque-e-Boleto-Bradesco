@@ -1,0 +1,445 @@
+SFORMZJ_1B_BOLETO_BR
+HFORMZJ_1B_BOLETO_BR
+ OLANP
+ HEADFORM      ZJ_1B_BOLETO_BR SAP                                                   DEF PBoleto bancário - Bradesco                        ZJ_1B_BOLETO_BR         00001SAP         40A 19970516173524PLOBATO     620 2004111715133813200062 P0                                                                                                                           320
+ LINE/:FORM CPI 10; LPI 6; TAB-STOP 1 CM; FONT-SIZE 10; START-PAGE FIRST;
+ LINE/:FORM PARAGRAPH HD; LANGVECTOR DPE; RDI; RDIDEV;
+ LINE/:PARAGRAPH BC LINE-SPACE 1 LN;
+ LINE/:PARAGRAPH C1 ALIGN CENTER; LINE-SPACE 1 LN; FONT-SIZE 10; BOLD ON;
+ LINE/:PARAGRAPH EN LINE-SPACE 0.80 LN; FONT-SIZE 6;
+ LINE/:PARAGRAPH H1 LINE-SPACE 0.90 LN; FONT-SIZE 10; BOLD ON;
+ LINE/:PARAGRAPH HD LINE-SPACE 0.80 LN; FONT-SIZE 6; BOLD ON;
+ LINE/:PARAGRAPH R2 LINE-SPACE 0.01 CM; FONT-SIZE 10;
+ LINE/:PARAGRAPH RP LINE-SPACE 0.30 CM; FONT-SIZE 6;
+ LINE/:PARAGRAPH T1 LINE-SPACE 1 LN; FONT HELVE; FONT-SIZE 14; BOLD ON;
+ LINE/:PARAGRAPH T2 LINE-SPACE 1 LN; FONT HELVE; FONT-SIZE 16;
+ LINE/:PARAGRAPH T3 LINE-SPACE 1 LN; FONT HELVE; FONT-SIZE 10;
+ LINE/:PARAGRAPH T4 LINE-SPACE 1 LN; FONT HELVE; FONT-SIZE 16; BOLD ON;
+ LINE/:PARAGRAPH EN TAB 1 3.20 CM LEFT; TAB 2 4.50 CM LEFT; TAB 3 7 CM LEFT;
+ LINE/:PARAGRAPH EN TAB 4 9 CM LEFT; TAB 5 12 CM LEFT; TAB 6 15.50 CM LEFT;
+ LINE/:PARAGRAPH H1 TAB 1 3.50 CM LEFT; TAB 2 7.50 CM LEFT; TAB 3 15.50 CM LEFT;
+ LINE/:PARAGRAPH HD TAB 1 3 CM LEFT; TAB 2 4.50 CM LEFT; TAB 3 7 CM LEFT;
+ LINE/:PARAGRAPH HD TAB 4 9 CM LEFT; TAB 5 12 CM LEFT; TAB 6 15.50 CM LEFT;
+ LINE/:PARAGRAPH R2 TAB 1 3.20 CM LEFT; TAB 2 4.50 CM LEFT; TAB 3 7 CM LEFT;
+ LINE/:PARAGRAPH R2 TAB 4 9 CM LEFT; TAB 5 12 CM LEFT; TAB 6 15.50 CM LEFT;
+ LINE/:PARAGRAPH RP TAB 1 3.20 CM LEFT; TAB 2 4.50 CM LEFT; TAB 3 7 CM LEFT;
+ LINE/:PARAGRAPH RP TAB 4 9 CM LEFT; TAB 5 12 CM LEFT; TAB 6 15.50 CM LEFT;
+ LINE/:PARAGRAPH T1 TAB 1 4 CM LEFT;
+ LINE/:PARAGRAPH T2 TAB 1 3.20 CM LEFT; TAB 2 4.30 CM LEFT;
+ LINE/:STRING B BOLD ON; MARK OFF;
+ LINE/:STRING B1 FONT HELVE; FONT-SIZE 14; BOLD ON;
+ LINE/:STRING C MARK OFF; BARCODE BC_I25;
+ LINE/:STRING I ITALIC ON; MARK OFF;
+ LINE/:STRING L FONT-SIZE 8; BOLD ON; MARK OFF;
+ LINE/:STRING S FONT-SIZE 8; MARK OFF;
+ LINE/:STRING U ULINE ON; MARK OFF;
+ LINE/:STRING X FONT HELVE; FONT-SIZE 14; BOLD ON;
+ LINE/:WINDOW BARCODE TYPE CONST;
+ LINE/:WINDOW BOLETO1 TYPE CONST;
+ LINE/:WINDOW BOLETO2 TYPE CONST;
+ LINE/:WINDOW BOLETO3 TYPE CONST;
+ LINE/:WINDOW HLINES1 TYPE CONST;
+ LINE/:WINDOW HLINES2 TYPE CONST;
+ LINE/:WINDOW HLINES3 TYPE CONST;
+ LINE/:WINDOW LOGO TYPE VAR;
+ LINE/:WINDOW MAIN
+ LINE/:WINDOW MESSAGE TYPE CONST;
+ LINE/:WINDOW MSGTXT TYPE VAR;
+ LINE/:WINDOW SUMMARY TYPE CONST;
+ LINE/:WINDOW TITULO TYPE VAR;
+ LINE/:WINDOW VLINES1 TYPE CONST;
+ LINE/:WINDOW VLINES2 TYPE CONST;
+ LINE/:WINDOW VLINES3 TYPE CONST;
+ LINE/:PAGE FIRST
+ LINE/:PAGE FIRST MAIN 0 0 CM 0 CM 0.01 CM 0.01 CM;
+ LINE/:PAGE FIRST WINDOW BARCODE 0.30 CM 27.50 CM 20 CM 1.50 CM;
+ LINE/:PAGE FIRST WINDOW BOLETO2 0.50 CM 8.70 CM 20 CM 8.80 CM;
+ LINE/:PAGE FIRST WINDOW BOLETO3 0.50 CM 18.60 CM 20 CM 8.70 CM;
+ LINE/:PAGE FIRST WINDOW HLINES2 0 CM 8.30 CM 20 CM 8.70 CM;
+ LINE/:PAGE FIRST WINDOW HLINES3 0 CM 18.20 CM 20 CM 8.70 CM;
+ LINE/:PAGE FIRST WINDOW LOGO 1 CM 0.30 CM 2.80 CM 1.20 CM;
+ LINE/:PAGE FIRST WINDOW MESSAGE 0 CM 1.90 CM 20 CM 6 CM;
+ LINE/:PAGE FIRST WINDOW MSGTXT 0.50 CM 1.90 CM 20 CM 6 CM;
+ LINE/:PAGE FIRST WINDOW SUMMARY 0 CM 0 CM 0.01 CM 0.01 CM;
+ LINE/:PAGE FIRST WINDOW TITULO 5 CM 1 CM 7 CM 0.70 CM;
+ LINE/:PAGE FIRST WINDOW VLINES2 0 CM 8.30 CM 20 CM 8.70 CM;
+ LINE/:PAGE FIRST WINDOW VLINES3 0 CM 18.20 CM 20 CM 8.70 CM;
+ END
+ HEADFORM      ZJ_1B_BOLETO_BR SAP                                                   TXT PBoleto bancário - Bradesco                        ZJ_1B_BOLETO_BR         00001SAP         40A 19970516173524PLOBATO     620 2004111715133813200373 P0                                                                                                                           320
+ LINE/:FORM TEXT 'Boleto bancário - Bradesco';
+ LINE/:PARAGRAPH BC TEXT 'Código de Barra';
+ LINE/:PARAGRAPH C1 TEXT 'Título Centralizado';
+ LINE/:PARAGRAPH EN TEXT 'Variable entries in frames';
+ LINE/:PARAGRAPH H1 TEXT 'Document header';
+ LINE/:PARAGRAPH HD TEXT 'Header lines in frame';
+ LINE/:PARAGRAPH R2 TEXT 'Final do boleto';
+ LINE/:PARAGRAPH RP TEXT 'Final do boleto';
+ LINE/:PARAGRAPH T1 TEXT 'Título 1';
+ LINE/:PARAGRAPH T2 TEXT 'Título 2';
+ LINE/:PARAGRAPH T3 TEXT 'Título 3';
+ LINE/:PARAGRAPH T4 TEXT 'Título 4';
+ LINE/:STRING B TEXT 'Boldface';
+ LINE/:STRING B1 TEXT 'Negrito Tamanho Médio';
+ LINE/:STRING C TEXT 'Barcode';
+ LINE/:STRING I TEXT 'Italics';
+ LINE/:STRING L TEXT 'Large font';
+ LINE/:STRING S TEXT 'Small font';
+ LINE/:STRING U TEXT 'Underscored';
+ LINE/:STRING X TEXT '';
+ LINE/:WINDOW BARCODE TEXT 'Barcode for Boleto';
+ LINE/:WINDOW BOLETO1 TEXT 'Boleto Window 1';
+ LINE/:WINDOW BOLETO2 TEXT 'Boleto window 2';
+ LINE/:WINDOW BOLETO3 TEXT 'Boleto Window 3';
+ LINE/:WINDOW HLINES1 TEXT 'Horizontal lines 1';
+ LINE/:WINDOW HLINES2 TEXT 'Horizontal lines 2';
+ LINE/:WINDOW HLINES3 TEXT 'Horizontal lines 3';
+ LINE/:WINDOW LOGO TEXT 'Logotipo da empresa';
+ LINE/:WINDOW MAIN TEXT 'Dummy main window - empty';
+ LINE/:WINDOW MESSAGE TEXT 'Janela de mensagens';
+ LINE/:WINDOW MSGTXT TEXT 'Texto da janela de mensagem';
+ LINE/:WINDOW SUMMARY TEXT 'Dummy window - empty';
+ LINE/:WINDOW TITULO TEXT 'Título Logo';
+ LINE/:WINDOW VLINES1 TEXT 'Vertical lines 1';
+ LINE/:WINDOW VLINES2 TEXT 'Vertical lines 2';
+ LINE/:WINDOW VLINES3 TEXT 'Vertical lines 3';
+ LINE/:PAGE FIRST TEXT 'First page';
+ LINE/WSUMMARY
+ LINE/*dummy
+ LINE/WMAIN
+ LINE/E510-C
+ LINE/*------------------ Check letter ----------------------------------------
+ LINE/E510-O
+ LINE/*------------------ Order check letter ----------------------------------
+ LINE/E510-S
+ LINE/*------------------ Check letter ----------------------------------------
+ LINE/E510
+ LINE/*------------------ Default letter --------------------------------------
+ LINE/E512
+ LINE/*------------------ Alternative payee -----------------------------------
+ LINE/E513
+ LINE/*------------------ Payment on behalf of --------------------------------
+ LINE/E515
+ LINE/*------------------ Heading ---------------------------------------------
+ LINE/E520
+ LINE/*------------------ Balance carried forward above -----------------------
+ LINE/E525
+ LINE/*------------------ Line items ------------------------------------------
+ LINE/E525-HR
+ LINE/*------------------ Text line for HR ------------------------------------
+ LINE/E526
+ LINE/*------------------ Payment advice note ---------------------------------
+ LINE/E530
+ LINE/*------------------ Sum total -------------------------------------------
+ LINE/E510-D
+ LINE/*-------------------- Letter E -----------------------------------------
+ LINE/WHLINES1
+ LINE/:BOX XPOS '0.25' CM YPOS '0.25' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10  TW
+ LINE/:BOX XPOS '0.25' CM YPOS '0.25' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10  TW
+ LINE/:BOX XPOS '0.25' CM YPOS '1.25' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10  TW
+ LINE/:BOX XPOS '0.25' CM YPOS '1.9' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '0.25' CM YPOS '2.6' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '0.25' CM YPOS '3.25' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '0.25' CM YPOS '3.9' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '15.85' CM YPOS '4.55' CM WIDTH '3.9' CM HEIGHT 0 TW FRAME 10  TW
+ LINE/:BOX XPOS '15.85' CM YPOS '5.25' CM WIDTH '3.9' CM HEIGHT 0 TW FRAME 10  TW
+ LINE/:BOX XPOS '15.85' CM YPOS '5.9' CM WIDTH '3.9' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '15.85' CM YPOS '6.6' CM WIDTH '3.9' CM HEIGHT 0 TW FRAME 10   TW
+ LINE/:BOX XPOS '0.25' CM YPOS '7.3' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10   TW
+ LINE/:BOX XPOS '0.25' CM YPOS '8.7' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10   TW
+ LINE/WVLINES1
+ LINE/:BOX XPOS '0.25' CM YPOS '0.25' CM WIDTH 0 TW HEIGHT '8.45' CM FRAME 10 TW
+ LINE/:BOX XPOS '3.4' CM YPOS '2.6' CM WIDTH 0 TW HEIGHT '0.65' CM FRAME 10 TW
+ LINE/:BOX XPOS '4.9' CM YPOS '3.25' CM WIDTH 0 TW HEIGHT '0.625' CM FRAME 10 TW
+ LINE/:BOX XPOS '7.4' CM YPOS '2.6' CM WIDTH 0 TW HEIGHT '1.275' CM FRAME 10 TW
+ LINE/:BOX XPOS '9.4' CM YPOS '2.6' CM WIDTH 0 TW HEIGHT '1.275' CM FRAME 10 TW
+ LINE/:BOX XPOS '12.4' CM YPOS '2.6' CM WIDTH 0 TW HEIGHT '1.275' CM FRAME 10 TW
+ LINE/:BOX XPOS '15.85' CM YPOS '1.275' CM WIDTH 0 TW HEIGHT '6.03' CM FRAME 10 TW
+ LINE/:BOX XPOS '19.75' CM YPOS '0.25' CM WIDTH 0 TW HEIGHT '8.45' CM FRAME 10 TW
+ LINE/WBOLETO1
+ LINEH1,,BANCO
+ LINEH1Bradesco,,&reguh-ubnkl(3)&-&reguh-ubnkl+3(1)&,,,,Recibo do Sacado
+ LINE/*
+ LINEHDLocal de Pagamento,,,,,,,,,,,,Vencimento
+ LINEENPagável preferencialmente em qualquer Agência Bradesco
+ LINE= ,,,,,,,,,,,,<L>&regud-ausft&</>
+ LINE/*
+ LINEHDCedente,,,,,,,,,,,,Agência/Cód. Cedente
+ LINEEN<L>&t001-butxt&, &t001-ort01&,,,,,,,,,,,,
+ LINE= &reguh-ubnkl+4(4)&-&reguh-ubkon(1)&/
+ LINE= &reguh-ubknt(5)&-&reguh-ubkon+1&</>
+ LINE/*
+ LINEHDData Documento,,Número Documento,,,,Espécie Doc.,,Aceite,,Data
+ LINE   Processamento
+ LINE= ,,Cart./Nosso Número
+ LINE/*<L>&regud-text9(10)&,,&regud-text9+10(6)&-&regud-text9+16(3)&,,,,,,,,
+ LINEEN<L>&regud-text9(10)&,,&regud-text9+10(6)&,,,,,,,, &reguh-laufd&,,
+ LINE= &regud-chect&-&regud-text4(1)&</>
+ LINE/*
+ LINEHDCIP          Cense,,,,Carteira,,Esp. Moeda,,Quantidade,,Vr. Moeda
+ LINE= ,,Valor Documento
+ LINEEN<L>,,,,&regud-text3(3)&,,R$,,,,,,&regud-dmbtr&</>
+ LINE/*
+ LINEHDInstruções de Responsabilidade do Cedente,,,,,,,,,,,,Desconto/Abatimento
+ LINEEN<L>Após o vencimento cobrar juros mora/dia de:,,,,,,,,,,,,</>
+ LINE/*
+ LINEEN<L>R$,,&regud-text5(10)&,,ao dia.,,,,,,,,</><B>Outras Deduções</>
+ LINEEN<L>Valores expressos em Real (R$).</>
+ LINEEN<L>Após o vencimento cobrar multa de: &regud-text5+10(15)& %.</>
+ LINE= ,,,,,,,,,,,,<B>Mora/Multas</>
+ LINEEN<L>&regud-text6(50)&</>
+ LINEEN<L>&regud-text6+50(50)&</>,,,,,,,,,,,,<B>Outros Acréscimos</>
+ LINE/*
+ LINEEN<L>&regud-text7(50)&</>
+ LINE/ ,,,,,,,,,,,,<B>Valor Cobrado</>
+ LINEEN<L>&regud-text7+50(25)&</>
+ LINE/:IF &REGUD-TEXT3+10(1)& = ' '.
+ LINEEN<B>Sacado</>,, <L>&reguh-znme1&,,,,,,,,CGC: &reguh-stcd1(2)&.
+ LINE= &reguh-stcd1+2(3)&.&reguh-stcd1+5(3)&.&reguh-stcd1+8(4)&-&reguh-stcd1+12(2)&</>
+ LINE/:ELSE
+ LINEEN<B>Sacado</>,, <L>&reguh-znme1&,,,,,,,,CPF: &regud-text3+20(3)&.
+ LINE= &regud-text3+23(3)&.&regud-text3+26(3)&-&regud-text3+29(2)&</>
+ LINE/:ENDIF
+ LINEEN            ,, <L>&reguh-zstra&,,,,,,,,INSCR.: &regud-text3+40(18)&</>
+ LINEEN            ,, <L>&reguh-zpstl&  &reguh-zort1&</>
+ LINEENSacador/Avalista
+ LINEEN,,,,,,,,,,Autenticação
+ LINE/WLOGO
+ LINE/:INCLUDE ZHEX-MACRO-LOGOFOGAS OBJECT TEXT ID ST
+ LINE/WTITULO
+ LINET4Sociedade Fogás Ltda.
+ LINE/WMSGTXT
+ LINE*
+ LINE*
+ LINE*
+ LINE*
+ LINE*
+ LINE*
+ LINE*
+ LINE*
+ LINE*
+ LINE*
+ LINE*
+ LINE*
+ LINE*
+ LINE*
+ LINE*
+ LINE*
+ LINEC1Evite protesto, mantenha seus pagamentos em dia.
+ LINE/WVLINES2
+ LINE/:BOX XPOS '0.25' CM YPOS '1.25' CM WIDTH 0 TW HEIGHT '7.45' CM FRAME 10 TW
+ LINE/:BOX XPOS '3.4' CM YPOS '2.6' CM WIDTH 0 TW HEIGHT '0.65' CM FRAME 10 TW
+ LINE/:BOX XPOS '4.9' CM YPOS '3.25' CM WIDTH 0 TW HEIGHT '0.625' CM FRAME 10 TW
+ LINE/:BOX XPOS '7.4' CM YPOS '2.6' CM WIDTH 0 TW HEIGHT '1.275' CM FRAME 10 TW
+ LINE/:BOX XPOS '9.4' CM YPOS '2.6' CM WIDTH 0 TW HEIGHT '1.275' CM FRAME 10 TW
+ LINE/:BOX XPOS '12.4' CM YPOS '2.6' CM WIDTH 0 TW HEIGHT '1.275' CM FRAME 10 TW
+ LINE/:BOX XPOS '15.85' CM YPOS '1.275' CM WIDTH 0 TW HEIGHT '6.03' CM FRAME 10 TW
+ LINE/:BOX XPOS '19.75' CM YPOS '1.25' CM WIDTH 0 TW HEIGHT '7.45' CM FRAME 10 TW
+ LINE/WHLINES2
+ LINE/*BOX XPOS '0.25' CM YPOS '0.25' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10
+ LINE/*TW
+ LINEEN------------------------------------------------------------------------
+ LINE= -------------------------------------------------------------------------------------
+ LINE/:BOX XPOS '0.25' CM YPOS '1.25' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '0.25' CM YPOS '1.9' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '0.25' CM YPOS '2.6' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '0.25' CM YPOS '3.25' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '0.25' CM YPOS '3.9' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '15.85' CM YPOS '4.55' CM WIDTH '3.9' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '15.85' CM YPOS '5.25' CM WIDTH '3.9' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '15.85' CM YPOS '5.9' CM WIDTH '3.9' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '15.85' CM YPOS '6.6' CM WIDTH '3.9' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '0.25' CM YPOS '7.3' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '0.25' CM YPOS '8.7' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/WHLINES3
+ LINE/*BOX XPOS '0.25' CM YPOS '0.25' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 Tw
+ LINE* ------------------------------------------------------------------------
+ LINE= -------------------------------------------------------------------------------------
+ LINE/:BOX XPOS '0.25' CM YPOS '1.25' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 Tw
+ LINE/:BOX XPOS '0.25' CM YPOS '1.9' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '0.25' CM YPOS '2.6' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '0.25' CM YPOS '3.25' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 Tw
+ LINE/:BOX XPOS '0.25' CM YPOS '3.9' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '15.85' CM YPOS '4.55' CM WIDTH '3.9' CM HEIGHT 0 TW FRAME 10 Tw
+ LINE/:BOX XPOS '15.85' CM YPOS '5.25' CM WIDTH '3.9' CM HEIGHT 0 TW FRAME 10 Tw
+ LINE/:BOX XPOS '15.85' CM YPOS '5.9' CM WIDTH '3.9' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '15.85' CM YPOS '6.6' CM WIDTH '3.9' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '0.25' CM YPOS '7.3' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/:BOX XPOS '0.25' CM YPOS '8.7' CM WIDTH '19.5' CM HEIGHT 0 TW FRAME 10 TW
+ LINE/WVLINES3
+ LINE/:BOX XPOS '0.25' CM YPOS '1.25' CM WIDTH 0 TW HEIGHT '7.45' CM FRAME 10 Tw
+ LINE/:BOX XPOS '3.4' CM YPOS '2.6' CM WIDTH 0 TW HEIGHT '0.65' CM FRAME 10 TW
+ LINE/:BOX XPOS '4.9' CM YPOS '3.25' CM WIDTH 0 TW HEIGHT '0.625' CM FRAME 10 Tw
+ LINE/:BOX XPOS '7.4' CM YPOS '2.6' CM WIDTH 0 TW HEIGHT '1.275' CM FRAME 10 TW
+ LINE/:BOX XPOS '9.4' CM YPOS '2.6' CM WIDTH 0 TW HEIGHT '1.275' CM FRAME 10 TW
+ LINE/:BOX XPOS '12.4' CM YPOS '2.6' CM WIDTH 0 TW HEIGHT '1.275' CM FRAME 10 Tw
+ LINE/:BOX XPOS '15.85' CM YPOS '1.275' CM WIDTH 0 TW HEIGHT '6.03' CM FRAME 10 tw
+ LINE/:BOX XPOS '19.75' CM YPOS '1.25' CM WIDTH 0 TW HEIGHT '7.45' CM FRAME 10 tw
+ LINE/WMESSAGE
+ LINE/:BOX XPOS '0.25' CM YPOS '0.00' CM WIDTH '19.5' CM HEIGHT '6.0' CM FRAME 10 TW
+ LINE/WBOLETO2
+ LINE/*,,BANCO
+ LINE*
+ LINEH1<B1>BRADESCO</>,,<B1>| &reguh-ubnkl(3)&-&reguh-ubnkl+3(1)& |</>,,,,
+ LINE= Recibo do Sacado
+ LINEHDLocal de Pagamento,,,,,,,,,,,,Vencimento
+ LINEEN<L>Pagável preferencialmente em qualquer Agência Bradesco</>
+ LINE= ,,,,,,,,,,,,<l>&regud-ausft&</>
+ LINE/*
+ LINEHDCedente,,,,,,,,,,,,Agência/Código Cedente
+ LINEEN<L>&t001-butxt&</><L>, &t001-ort01&,,,,,,,,,,,,
+ LINE= &reguh-ubnkl+4(4)&-&reguh-ubkon(1)&/
+ LINE= &reguh-ubknt(4)&-&reguh-ubkon+1&</>
+ LINE/*
+ LINEHDData Documento,,Número Documento,,,,Espécie Doc.,,Aceite,,Data
+ LINE  Processamento,,Cart./Nosso Número
+ LINEEN<L>&regud-text9(10)&</><L>,,&regud-text9+10(6)&,,,,
+ LINE= ,,,, &reguh-laufd&,,&regud-text3+1(2)&/&regud-chect&-&regud-text4(1)&</>
+ LINE/*
+ LINEHDCip          Cense,,,,Carteira,,Esp. Moeda,,Quantidade,,Vr. Moeda,,( = )
+ LINE  Valor Documento
+ LINEEN,,,,<L>&regud-text3+1(2)&,,R$,,,,,,&regud-dmbtr&</>
+ LINE/*
+ LINE/**---> Realiza perform para busca de textos de instruções para o boleto
+ LINE/:PERFORM ZF_BUSCA_INST IN PROGRAM ZRFFOBR_D
+ LINE/:USING &REGUH-UBNKL(3)&
+ LINE/:CHANGING &V_TEXT1&
+ LINE/:CHANGING &V_TEXT2&
+ LINE/:CHANGING &V_TEXT3&
+ LINE/:CHANGING &V_TEXT4&
+ LINE/:CHANGING &V_TEXT5&
+ LINE/:CHANGING &V_TEXT6&
+ LINE/:CHANGING &V_TEXT7&
+ LINE/:CHANGING &V_TEXT8&
+ LINE/:ENDPERFORM
+ LINE/*
+ LINEHDInstruções:,,,,,,,,,,,,( - ) Desconto/Abatimento
+ LINE/**---> CONDICIONAL DE IMPRESSÃO CLIENTES FORNECEDORES
+ LINE/:PERFORM ZF_IMPRIME_DESCONTO IN PROGRAM ZRFFOBR_D
+ LINE/:USING &REGUP-KUNNR&
+ LINE/:USING &REGUP-BELNR&
+ LINE/:USING &REGUD-DMBTR&
+ LINE/:CHANGING &V_FLAG&
+ LINE/:CHANGING &V_DESCONTO&
+ LINE/:CHANGING &V_JUROSMORA&
+ LINE/:ENDPERFORM
+ LINE/*
+ LINE/:IF &V_FLAG& = 'X' AND &V_DESCONTO& <> '0.00'
+ LINEEN<L>ATÉ VENCIMENTO, CONCEDER DESCONTO R$ &V_DESCONTO&,,,,,,,,,,,,</>
+ LINEEN<L>SAB/DOM/FER - DESCONTO VALE ATÉ O 1° DIA ÚTIL</>,,,,,,,,,,,,<B>( - )
+ LINE  Outras Deduções</>
+ LINEEN<L>&V_TEXT1&</>
+ LINEEN<L>&V_TEXT2& &V_JUROSMORA&</>,,,,,,,,,,,,<B>( + ) Mora/Multas</>
+ LINEEN<L>&V_TEXT3&</>
+ LINEEN<L>&V_TEXT4&</>,,,,,,,,,,,,<B>( + ) Outros Acréscimos</>
+ LINEEN<L>&V_TEXT5&</>
+ LINEEN<L>&V_TEXT6&</>,,,,,,,,,,,,<B>( = ) Valor Cobrado</>
+ LINEEN<L>&V_TEXT7&</>
+ LINE/:ELSE
+ LINE/**---> TEXTOS ENCONTRADOS NA TRANSAÇÃO OB47
+ LINEEN<L>&V_TEXT1&</>
+ LINEEN<L>&V_TEXT2& &V_JUROSMORA&</>,,,,,,,,,,,,<B>( - )Outras Deduções</>
+ LINEEN<L>&V_TEXT3&</>
+ LINEEN<L>&V_TEXT4&</>,,,,,,,,,,,,<B>( + ) Mora/Multas</>
+ LINEEN<L>&V_TEXT5&</>
+ LINEEN<L>&V_TEXT6&</>,,,,,,,,,,,,<B>( + ) Outros Acréscimos</>
+ LINEEN<L>&V_TEXT7&</>
+ LINEEN<L>&V_TEXT8&</>,,,,,,,,,,,,<B>( = ) Valor Cobrado</>
+ LINE*
+ LINE/:ENDIF
+ LINE/*
+ LINE/:IF &REGUD-TEXT3+10(1)& = ' '.
+ LINEEN<B>Sacado</>    <L>&regup-kunnr&</> - <L>&reguh-znme1&</><L>,,,,,,,,,,
+ LINE  CGC: &reguh-stcd1(2)&.
+ LINE= &reguh-stcd1+2(3)&.&reguh-stcd1+5(3)&.&reguh-stcd1+8(4)&-&reguh-stcd1+12(2)&</>
+ LINE/:ELSE
+ LINEEN<B>Sacado</>    <L>&regup-kunnr&</> - <L>&reguh-znme1&</><L>,,,,,,,,,,
+ LINE  CPF: &regud-text3+20(3)&.
+ LINE= &regud-text3+23(3)&.&regud-text3+26(3)&-&regud-text3+29(2)&</>
+ LINE/:ENDIF
+ LINEEN          <L>&reguh-zstra&</>
+ LINEEN          <L>&reguh-zpstl& &reguh-zort1&</>,,,,,,,,,,,,Código de Baixa:
+ LINEENSacador/Avalista,,,,,,,,,,,,<L>   &regud-text3(2)&-&regud-chect&-
+ LINE= &regud-text4(1)&</>
+ LINEEN,,,,,,,,,,- Autenticação Mecânica -
+ LINE/WBOLETO3
+ LINE/*,,BANCO
+ LINE*
+ LINEH1<B1>BRADESCO</>,,<B1>| &reguh-ubnkl(3)&-&reguh-ubnkl+3(1)& |</>,,
+ LINE= &regud-text8(5)&.&regud-text8+5(5)& &regud-text8+10(5)&
+ LINE= .&regud-text8+15(6)& &regud-text8+21(5)&.&regud-text8+26(6)&
+ LINE=  &regud-text8+32(1)& &regud-text8+33(14)&
+ LINE/*
+ LINE/**-> Busca código digitável e cód de barras:
+ LINE/*PERFORM ZF_BUSCA_CODIGO IN PROGRAM ZRFFOBR_D
+ LINE/*
+ LINE/*
+ LINE/*ENDPERFORM
+ LINE/*
+ LINE/*<B1>BRADESCO</>,,<B1>| &reguh-ubnkl(3)&-&reguh-ubnkl+3(1)& |</>,,
+ LINE/*
+ LINEHDLocal de Pagamento,,,,,,,,,,,,Vencimento
+ LINEEN<L>Pagável preferencialmente em qualquer Agência Bradesco</>
+ LINE= ,,,,,,,,,,,,<L>&regud-ausft&</>
+ LINE/*
+ LINEHDCedente,,,,,,,,,,,,Agência/Cód. Cedente
+ LINEEN<L>&t001-butxt&, &t001-ort01&,,,,,,,,,,,,
+ LINE= &reguh-ubnkl+4(4)&-&reguh-ubkon(1)&/
+ LINE= &reguh-ubknt(5)&-&reguh-ubkon+1&</>
+ LINE/*
+ LINEHDData Documento,,Número Documento,,,,Espécie Doc.,,Aceite,,Data
+ LINE  Processamento,,Cart./Nosso Número
+ LINE/*<L>&regud-text9(10)&,,&regud-text9+10(6)&-&regud-text9+16(3)&,,,,,,,,
+ LINEEN<L>&regud-text9(10)&,,&regud-text9+10(6)&,,,,,,,, &reguh-laufd&,,
+ LINE= &regud-text3+1(2)&/&regud-chect&-&regud-text4(1)&</>
+ LINE/*
+ LINEHDCip          Cense,,,,Cart.,,Esp. Moeda,,Quantidade,,Vr. Moeda
+ LINE= ,,( = ) Valor Documento
+ LINEEN<L>,,,,&regud-text3+1(2)&,,R$,,,,,,&regud-dmbtr&</>
+ LINE/*
+ LINEHDInstruções:,,,,,,,,,,,,( - ) Desconto/Abatimento
+ LINE/:IF &V_FLAG& = 'X' AND &V_DESCONTO& <> '0.00'
+ LINEEN<L>ATÉ VENCIMENTO, CONCEDER DESCONTO R$ &V_DESCONTO&,,,,,,,,,,,,</>
+ LINEEN<L>SAB/DOM/FER - DESCONTO VALE ATÉ O 1° DIA ÚTIL</>,,,,,,,,,,,,<B>( - )
+ LINE  Outras Deduções</>
+ LINEEN<L>&V_TEXT1&</>
+ LINEEN<L>&V_TEXT2& &V_JUROSMORA&</>,,,,,,,,,,,,<B>( + ) Mora/Multas</>
+ LINEEN<L>&V_TEXT3&</>
+ LINEEN<L>&V_TEXT4&</>,,,,,,,,,,,,<B>( + ) Outros Acréscimos</>
+ LINEEN<L>&V_TEXT5&</>
+ LINEEN<L>&V_TEXT6&</>,,,,,,,,,,,,<B>( = ) Valor Cobrado</>
+ LINE/ <L>&V_TEXT7&</>
+ LINE/:ELSE
+ LINEEN<L>&V_TEXT1&</>
+ LINEEN<L>&V_TEXT2& &V_JUROSMORA&</>,,,,,,,,,,,,<B>( - ) Outras Deduções</>
+ LINEEN<L>&V_TEXT3&</>
+ LINEEN<L>&V_TEXT4&</>,,,,,,,,,,,,<B>( + ) Mora/Multas</>
+ LINEEN<L>&V_TEXT5&</>
+ LINEEN<L>&V_TEXT6&</>,,,,,,,,,,,,<B>( + ) Outros Acréscimos</>
+ LINEEN<L>&V_TEXT7&</>
+ LINEEN<L>&V_TEXT8&</>,,,,,,,,,,,,<B>( = ) Valor Cobrado</>
+ LINE*
+ LINE/:ENDIF
+ LINE/:IF &REGUD-TEXT3+10(1)& = ' '.
+ LINEEN<B>Sacado</>    <L>&regup-kunnr&</> - <L>&reguh-znme1&</><L>,,,,,,,,,,
+ LINE  CGC: &reguh-stcd1(2)&.
+ LINE= &reguh-stcd1+2(3)&.&reguh-stcd1+5(3)&.&reguh-stcd1+8(4)&-&reguh-stcd1+12(2)&</>
+ LINE/:ELSE
+ LINEEN<B>Sacado</>    <L>&regup-kunnr&</> - <L>&reguh-znme1&
+ LINE= ,,,,,,,,,,CPF: &regud-text3+20(3)&.
+ LINE= &regud-text3+23(3)&.&regud-text3+26(3)&-&regud-text3+29(2)&</>
+ LINE/:ENDIF
+ LINEEN          <L>&reguh-zstra&</>
+ LINEEN          <L>&reguh-zpstl& &reguh-zort1&</>,,,,,,,,,,,,Código de Baixa:
+ LINEENSacador/Avalista,,,,,,,,,,,,<L>   &regud-text3(2)&-&regud-chect&-
+ LINE= &regud-text4(1)&</>
+ LINEEN,,,,,,,,,,- Autenticação Mecânica -
+ LINE/WBARCODE
+ LINE*
+ LINE*
+ LINE* <C>&regud-text8+50(44)&</>
+ LINE/*<C>2379400000000000002368092368124457100051240</>
+ LINER2,,,,,,,,,,Ficha de Compensação
+ END
+ ACTVSAP
+E
+

@@ -1,0 +1,239 @@
+SFORMZ_1B_CHECK_BRAD
+HFORMZ_1B_CHECK_BRAD
+ OLANP
+ HEADFORM      Z_1B_CHECK_BRAD SAP                                                   DEF PCheques pré-numerados                             Z_1B_CHECK_BRAD         00099DEPNER      30B 19960118103739PLOBATO     620 2004111808531313200052 P0                                                                                                                           320
+ LINE/:FORM CPI 10; LPI 6; TAB-STOP 5 CH; FONT-SIZE 8; START-PAGE FIRST;
+ LINE/:FORM FORMAT LETTER PORTRAIT; PARAGRAPH L; RDI; RDIDEV;
+ LINE/:PARAGRAPH B ALIGN BLOCK; LINE-SPACE 1 LN;
+ LINE/:PARAGRAPH CS ALIGN CENTER; LINE-SPACE 0.60 LN; FONT-SIZE 6; BOLD ON;
+ LINE/:PARAGRAPH KT LINE-SPACE 1 LN; FONT-SIZE 12; BOLD ON;
+ LINE/:PARAGRAPH L LINE-SPACE 1 LN;
+ LINE/:PARAGRAPH LS LINE-SPACE 1 LN; FONT-SIZE 6;
+ LINE/:PARAGRAPH T0 LINE-SPACE 1 LN; BOLD ON;
+ LINE/:PARAGRAPH T1 NOBLANKS ON; LINE-SPACE 1 LN;
+ LINE/:PARAGRAPH T2 LINE-SPACE 1 LN;
+ LINE/:PARAGRAPH T3 LINE-SPACE 1 LN;
+ LINE/:PARAGRAPH T5 LINE-SPACE 1 LN;
+ LINE/:PARAGRAPH T6 LINE-SPACE 1 LN;
+ LINE/:PARAGRAPH T7 LINE-SPACE 0.01 LN; FONT COURIER; FONT-SIZE 12;
+ LINE/:PARAGRAPH T8 LINE-SPACE 1 LN; FONT COURIER; FONT-SIZE 12;
+ LINE/:PARAGRAPH T9 LINE-SPACE 1 LN; FONT COURIER; FONT-SIZE 12;
+ LINE/:PARAGRAPH XX LINE-SPACE 1.20 LN; FONT COURIER; FONT-SIZE 12;
+ LINE/:PARAGRAPH KT TAB 1 43 CH LEFT;
+ LINE/:PARAGRAPH L TAB 1 43 CH LEFT;
+ LINE/:PARAGRAPH T0 TAB 1 17 CH LEFT; TAB 2 70 CH RIGHT;
+ LINE/:PARAGRAPH T1 TAB 1 17 CH LEFT; TAB 2 42 CH SIGN; TAB 3 55 CH SIGN;
+ LINE/:PARAGRAPH T1 TAB 4 70 CH SIGN;
+ LINE/:PARAGRAPH T2 TAB 1 22 CH LEFT; TAB 2 44 CH LEFT;
+ LINE/:PARAGRAPH T3 TAB 1 3 CH LEFT;
+ LINE/:PARAGRAPH T5 TAB 1 7 CH LEFT; TAB 2 37 CH LEFT;
+ LINE/:PARAGRAPH T6 TAB 1 27.50 CH CENTER; TAB 2 55 CH RIGHT;
+ LINE/:PARAGRAPH T7 TAB 1 12.50 CM LEFT;
+ LINE/:PARAGRAPH T8 TAB 1 2 CH LEFT;
+ LINE/:PARAGRAPH T9 TAB 1 28 CH LEFT; TAB 2 42 CH LEFT; TAB 3 50 CH LEFT;
+ LINE/:PARAGRAPH T9 TAB 4 63 CH LEFT;
+ LINE/:PARAGRAPH XX TAB 1 20 MM LEFT;
+ LINE/:STRING H BOLD ON;
+ LINE/:STRING KF FONT HELVE; FONT-SIZE 6; BOLD ON;
+ LINE/:STRING NP FONT COURIER; FONT-SIZE 12; ITALIC OFF; ULINE OFF; SUBSCRIPT OFF;
+ LINE/:STRING NP SUPERSCRIPT OFF;
+ LINE/:STRING U ULINE ON;
+ LINE/:WINDOW ADDRESS TYPE CONST; PARAGRAPH L;
+ LINE/:WINDOW CARRYFWD TYPE VAR; PARAGRAPH T1;
+ LINE/:WINDOW CHECK TYPE CONST;
+ LINE/:WINDOW CHECKADD TYPE VAR;
+ LINE/:WINDOW CHECKSPL TYPE CONST;
+ LINE/:WINDOW HEADER TYPE CONST; PARAGRAPH KT;
+ LINE/:WINDOW INFO TYPE CONST; PARAGRAPH L;
+ LINE/:WINDOW MAIN
+ LINE/:WINDOW PAGE TYPE VAR; PARAGRAPH L;
+ LINE/:WINDOW SUMMARY TYPE CONST; PARAGRAPH T6;
+ LINE/:PAGE FIRST PAGE-COUNT START;
+ LINE/:PAGE FIRST MAIN 0 0 CH 0 LN 17 CM 5 LN;
+ LINE/:PAGE FIRST WINDOW CARRYFWD 7 CM 3.70 CM 10 CM 2 LN;
+ LINE/:PAGE FIRST WINDOW CHECK 0 CM 1 LN 17.50 CM 10 LN;
+ LINE/:PAGE FIRST WINDOW CHECKADD 0 CM 4 LN 17 CM 3 LN;
+ LINE/:PAGE FIRST WINDOW CHECKSPL 0 CM 1 LN 18 CM 3 LN;
+ END
+ HEADFORM      Z_1B_CHECK_BRAD SAP                                                   TXT PCheques pré-numerados                             Z_1B_CHECK_BRAD         00099DEPNER      30B 19960118103739PLOBATO     620 2004111808531313200177 P0                                                                                                                           320
+ LINE/:FORM TEXT 'Cheques pré-numerados';
+ LINE/:PARAGRAPH B TEXT 'alinhamento justificad';
+ LINE/:PARAGRAPH CS TEXT 'centrado fonte pequena';
+ LINE/:PARAGRAPH KT TEXT 'Cabeçalho';
+ LINE/:PARAGRAPH L TEXT 'esquerda';
+ LINE/:PARAGRAPH LS TEXT 'esquerda fonte pequena';
+ LINE/:PARAGRAPH T0 TEXT 'tabulador totais';
+ LINE/:PARAGRAPH T1 TEXT 'tabulador partidas individuais';
+ LINE/:PARAGRAPH T2 TEXT 'tabulador nº cheque etc.';
+ LINE/:PARAGRAPH T3 TEXT 'tabulador nome banco';
+ LINE/:PARAGRAPH T5 TEXT 'tabulador recebedor cheque';
+ LINE/:PARAGRAPH T6 TEXT 'tabulador encerr.formulário';
+ LINE/:PARAGRAPH T7 TEXT 'tabulador montante';
+ LINE/:PARAGRAPH T8 TEXT 'tabulador fornecedor';
+ LINE/:PARAGRAPH T9 TEXT 'tabulador última linha';
+ LINE/:PARAGRAPH XX TEXT 'Montante por extenso';
+ LINE/:STRING H TEXT 'Cadeia sublinhada';
+ LINE/:STRING KF TEXT 'Fonte pequena e negrito';
+ LINE/:STRING NP TEXT 'Não proporcional (p/ULINE)';
+ LINE/:STRING U TEXT 'Cadeia sublinhada';
+ LINE/:WINDOW ADDRESS TEXT 'Endereço';
+ LINE/:WINDOW CARRYFWD TEXT 'Transporte embaixo';
+ LINE/:WINDOW CHECK TEXT 'Extensão com cheque';
+ LINE/:WINDOW CHECKADD TEXT 'Endereço no cheque';
+ LINE/:WINDOW CHECKSPL TEXT 'montante por extenso';
+ LINE/:WINDOW HEADER TEXT 'Cabeçalho carta';
+ LINE/:WINDOW INFO TEXT 'data, outros dados';
+ LINE/:WINDOW MAIN TEXT 'MAIN';
+ LINE/:WINDOW PAGE TEXT 'página';
+ LINE/:WINDOW SUMMARY TEXT 'página encerram.formulário';
+ LINE/:PAGE FIRST TEXT 'Formulário de cheque';
+ LINE/WHEADER
+ LINE/:INCLUDE &REGUD-TXTKO& OBJECT TEXT ID ST PARAGRAPH KT
+ LINE/WADDRESS
+ LINE*
+ LINE/:ADDRESS PARAGRAPH AS
+ LINE/:  TITLE       &REGUH-ZANRE&
+ LINE/:  NAME        &REGUH-ZNME1&, &REGUH-ZNME2&, &REGUH-ZNME3&, &REGUH-ZNME4&
+ LINE/:  STREET      &REGUH-ZSTRA&
+ LINE/:  POBOX       &REGUH-ZPFAC& CODE &REGUH-ZPST2&
+ LINE/:  POSTCODE    &REGUH-ZPSTL&
+ LINE/:  REGION      &REGUH-ZREGI&
+ LINE/:  CITY        &REGUH-ZORT1&, &REGUH-ZORT2&
+ LINE/:  COUNTRY     &REGUH-ZLAND&
+ LINE/:  FROMCOUNTRY &T001-LAND1&
+ LINE/:ENDADDRESS
+ LINE/WINFO
+ LINE/E505
+ LINE/*------------------ Nosso nº conta --------------------------------------
+ LINE/WPAGE
+ LINE* <H>Página</> &PAGE&
+ LINE/ <H>Cheque</> &REGUD-STAPT&/&REGUD-CHECT&
+ LINE/WSUMMARY
+ LINE* Síntese,,,,&T042Z-TEXT1&
+ LINE/ Banco: &REGUH-HBKID&,,Empresa: &REGUH-ZBUKR&,,Meio de pagamento
+ LINE  &REGUH-RZAWE&
+ LINE/ <NP>&ULINE(55)& </>
+ LINE*
+ LINE/ Número de cheques criados,,,,&REGUD-ZAHLT&
+ LINE/ Formulários c/aviso de pagamento,,,,&REGUD-AVISH&
+ LINE*
+ LINE* Cheques impressos,,intervalo nºs,,nº cheque.
+ LINE/ de,,&REGUD-STAPF&,,&REGUD-CHECF&
+ LINE/ até,,&REGUD-STAPT&,,&REGUD-CHECT&
+ LINE*
+ LINE* Total de pagamentos &REGUD-HWAER&,,,,&REGUD-SUMME&
+ LINE/ <NP>&ULINE(55)& </>
+ LINE/WMAIN
+ LINE*
+ LINE/E510-C
+ LINE*
+ LINE/E510-S
+ LINE/*------------------ texto do cheque--------------------------------------
+ LINE/*
+ LINE/E512
+ LINE/*------------------ Recebedor alternativo do pagamento ------------------
+ LINE/*
+ LINE/*
+ LINE/*
+ LINE/*
+ LINE/E513
+ LINE/*------------------ Emissor alternativo ---------------------------------
+ LINE/*
+ LINE/E515
+ LINE/*------------------ Título ----------------------------------------------
+ LINE/*
+ LINE/*
+ LINE/E520
+ LINE/*------------------ Transporte acim -------------------------------------
+ LINE/*
+ LINE/E525
+ LINE/*------------------ Partidas individuais -----------------------------
+ LINE/*PROTECT
+ LINE/*
+ LINE/*
+ LINE/*ENDPROTECT
+ LINE/E525-HR
+ LINE/*------------------ partidas para HR ------------------------------------
+ LINE/*
+ LINE/E526
+ LINE/*------------------ Aviso de pgto. --------------------------------------
+ LINE/*
+ LINE/*
+ LINE/*
+ LINE/E530
+ LINE/*------------------ Total -----------------------------------------------
+ LINE/*PROTECT
+ LINE/*
+ LINE/*
+ LINE/*
+ LINE/*
+ LINE/*ENDPROTECT
+ LINE/WCHECK
+ LINE/E540
+ LINE/*------------------ cheque invalidado -----------------------------------
+ LINET7,,*** INVALIDADO ***
+ LINEXX,,*** ZERO REAIS e ZERO CENTAVOS ***
+ LINET9
+ LINET8,,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ LINET9
+ LINET9,,XXXXXXXXXXXXXX,,XX,,XXXXXXXXX,,XX
+ LINE/E545
+ LINE/*
+ LINE/*Valor
+ LINET7,,&REGUD-SWNES&
+ LINE*
+ LINE/*Favorecido
+ LINET7
+ LINET7
+ LINET7
+ LINE/*,,&REGUH-NAME1& &REGUH-NAME2&
+ LINET7
+ LINET7
+ LINET7
+ LINE/*,,&REGUD-AUSTO&,,&regud-zaliw(14)&,,&reguh-zaldt+6&
+ LINE/*Local e Data
+ LINE/*&REGUD-AUSTO&,,&regud-zaliw(2)&,,&regud-zaliw+4(10)&,,&reguh-zaldt+6&
+ LINE/WCHECKADD
+ LINEXX &REGUH-NAME1& &REGUH-NAME2&
+ LINE/WCHECKSPL
+ LINE/E545
+ LINE/*------------------ Montante por extenso --------------------------------
+ LINE/*&'*** 'SPELL-WORD& &REGUD-WAERS&&' and 'SPELL-DECWORD' centavos'& ***
+ LINE/*Other example (comparar idioma):
+ LINE/*&'*** 'SPELL-WORD& &REGUD-WAERS&&' e 'SPELL-DECIMAL(2)'/100 '&***
+ LINE/*Outro exemplo se forem usados dígitos em palavra:
+ LINE/*&SPELL-DIG06(6)&&SPELL-DIG05(6)&&SPELL-DIG04(6)&&SPELL-DIG03(6)&&SPELL-DIG02(6)&&SPELL-DIG01(7)&
+ LINE/:DEFINE &V_ASTERISCO& = '-*- -*- -*- -*- -*- -*- -*- -*- -*- -*- -*-  -*- -*- -*-  -*--*-  -*- -*- -*- -*-  -*--*-  -*-'
+ LINE/*
+ LINE/:IF &SPELL-WORD& = 'UM' AND &SPELL-DECWORD& <> 'UM' AND &SPELL-DECWORD& <> 'ZERO'
+ LINEXX,,&SPELL-WORD& REAL&' E 'SPELL-DECWORD' CENTAVOS'& -*- &V_ASTERISCO&
+ LINE  &V_ASTERISCO&&V_ASTERISCO&
+ LINE/:ENDIF
+ LINE/:IF &SPELL-WORD& = 'UM' AND &SPELL-DECWORD& = 'UM'
+ LINEXX,,&SPELL-WORD& REAL&' E 'SPELL-DECWORD' CENTAVO'& -*- &V_ASTERISCO&
+ LINE  &V_ASTERISCO&&V_ASTERISCO&
+ LINE/:ENDIF
+ LINE/:IF &SPELL-WORD& <> 'UM' AND &SPELL-DECWORD& = 'UM'
+ LINEXX,,&SPELL-WORD& REAIS&' E 'SPELL-DECWORD' CENTAVO'& -*- &V_ASTERISCO&
+ LINE  &V_ASTERISCO&&V_ASTERISCO&
+ LINE/:ENDIF
+ LINE/:IF &SPELL-WORD& <> 'UM' AND &SPELL-DECWORD& <> 'UM' AND &SPELL-DECWORD& <> 'ZERO'
+ LINEXX,,&SPELL-WORD& REAIS&' E 'SPELL-DECWORD' CENTAVOS'& -*- &V_ASTERISCO&
+ LINE  &V_ASTERISCO&&V_ASTERISCO&
+ LINE/:NEW-PAGE
+ LINE/:ENDIF
+ LINE/:IF &SPELL-WORD& = 'UM' AND &SPELL-DECWORD& = 'ZERO'
+ LINEXX,,&SPELL-WORD& REAL-*- &V_ASTERISCO& &V_ASTERISCO&
+ LINE/:ENDIF
+ LINE/:IF &SPELL-WORD& <> 'UM' AND &SPELL-DECWORD& = 'ZERO'
+ LINEXX,,&SPELL-WORD& REAIS -*- &V_ASTERISCO&&V_ASTERISCO&
+ LINE/:ENDIF
+ LINE/WCARRYFWD
+ LINET7,,&REGUD-AUSTO&,,&regud-zaliw(2)&,,&regud-zaliw+4(10)&,,&reguh-zaldt+6&
+ LINE/E535
+ LINE/*
+ LINE/*
+ END
+ ACTVSAP
+E
+
